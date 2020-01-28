@@ -1,0 +1,101 @@
+└─ BODY: 1:0
+    ├─ WHITESPACE: 1:0
+    │   └─ Token(type=NEWLINE, content='\n', line=1, col=0)
+    ├─ STATEMENT: 2:0
+    │   ├─ FUNNAME: 2:0
+    │   │   └─ Token(type=WORD, content='cmake_minimum_required', line=2, col=0)
+    │   ├─ LPAREN: 2:22
+    │   │   └─ Token(type=LEFT_PAREN, content='(', line=2, col=22)
+    │   ├─ ARGGROUP: 2:23
+    │   │   └─ KWARGGROUP: 2:23
+    │   │       ├─ KEYWORD: 2:23
+    │   │       │   └─ Token(type=WORD, content='VERSION', line=2, col=23)
+    │   │       ├─ Token(type=WHITESPACE, content=' ', line=2, col=30)
+    │   │       └─ ARGGROUP: 2:31
+    │   │           └─ PARGGROUP: 2:31
+    │   │               └─ ARGUMENT: 2:31
+    │   │                   └─ Token(type=UNQUOTED_LITERAL, content='3.5', line=2, col=31)
+    │   └─ RPAREN: 2:34
+    │       └─ Token(type=RIGHT_PAREN, content=')', line=2, col=34)
+    ├─ WHITESPACE: 2:35
+    │   └─ Token(type=NEWLINE, content='\n', line=2, col=35)
+    ├─ STATEMENT: 3:0
+    │   ├─ FUNNAME: 3:0
+    │   │   └─ Token(type=WORD, content='project', line=3, col=0)
+    │   ├─ LPAREN: 3:7
+    │   │   └─ Token(type=LEFT_PAREN, content='(', line=3, col=7)
+    │   ├─ ARGGROUP: 3:8
+    │   │   └─ PARGGROUP: 3:8
+    │   │       └─ ARGUMENT: 3:8
+    │   │           └─ Token(type=WORD, content='demo', line=3, col=8)
+    │   └─ RPAREN: 3:12
+    │       └─ Token(type=RIGHT_PAREN, content=')', line=3, col=12)
+    ├─ WHITESPACE: 3:13
+    │   └─ Token(type=NEWLINE, content='\n', line=3, col=13)
+    ├─ FLOW_CONTROL: 4:0
+    │   ├─ STATEMENT: 4:0
+    │   │   ├─ FUNNAME: 4:0
+    │   │   │   └─ Token(type=WORD, content='if', line=4, col=0)
+    │   │   ├─ LPAREN: 4:2
+    │   │   │   └─ Token(type=LEFT_PAREN, content='(', line=4, col=2)
+    │   │   ├─ ARGGROUP: 4:3
+    │   │   │   ├─ PARGGROUP: 4:3
+    │   │   │   │   ├─ ARGUMENT: 4:3
+    │   │   │   │   │   └─ Token(type=WORD, content='FOO', line=4, col=3)
+    │   │   │   │   └─ Token(type=WHITESPACE, content=' ', line=4, col=6)
+    │   │   │   └─ KWARGGROUP: 4:7
+    │   │   │       ├─ KEYWORD: 4:7
+    │   │   │       │   └─ Token(type=WORD, content='AND', line=4, col=7)
+    │   │   │       ├─ Token(type=WHITESPACE, content=' ', line=4, col=10)
+    │   │   │       └─ ARGGROUP: 4:11
+    │   │   │           └─ PARENGROUP: 4:11
+    │   │   │               ├─ LPAREN: 4:11
+    │   │   │               │   └─ Token(type=LEFT_PAREN, content='(', line=4, col=11)
+    │   │   │               ├─ ARGGROUP: 4:12
+    │   │   │               │   ├─ PARGGROUP: 4:12
+    │   │   │               │   │   ├─ ARGUMENT: 4:12
+    │   │   │               │   │   │   └─ Token(type=WORD, content='BAR', line=4, col=12)
+    │   │   │               │   │   └─ Token(type=WHITESPACE, content=' ', line=4, col=15)
+    │   │   │               │   └─ KWARGGROUP: 4:16
+    │   │   │               │       ├─ KEYWORD: 4:16
+    │   │   │               │       │   └─ Token(type=WORD, content='OR', line=4, col=16)
+    │   │   │               │       ├─ Token(type=WHITESPACE, content=' ', line=4, col=18)
+    │   │   │               │       └─ ARGGROUP: 4:19
+    │   │   │               │           └─ PARGGROUP: 4:19
+    │   │   │               │               └─ ARGUMENT: 4:19
+    │   │   │               │                   └─ Token(type=WORD, content='BAZ', line=4, col=19)
+    │   │   │               └─ RPAREN: 4:22
+    │   │   │                   └─ Token(type=RIGHT_PAREN, content=')', line=4, col=22)
+    │   │   └─ RPAREN: 4:23
+    │   │       └─ Token(type=RIGHT_PAREN, content=')', line=4, col=23)
+    │   ├─ BODY: 4:24
+    │   │   ├─ WHITESPACE: 4:24
+    │   │   │   ├─ Token(type=NEWLINE, content='\n', line=4, col=24)
+    │   │   │   └─ Token(type=WHITESPACE, content='  ', line=5, col=0)
+    │   │   ├─ STATEMENT: 5:2
+    │   │   │   ├─ FUNNAME: 5:2
+    │   │   │   │   └─ Token(type=WORD, content='add_library', line=5, col=2)
+    │   │   │   ├─ LPAREN: 5:13
+    │   │   │   │   └─ Token(type=LEFT_PAREN, content='(', line=5, col=13)
+    │   │   │   ├─ ARGGROUP: 5:14
+    │   │   │   │   ├─ PARGGROUP: 5:14
+    │   │   │   │   │   ├─ ARGUMENT: 5:14
+    │   │   │   │   │   │   └─ Token(type=WORD, content='hello', line=5, col=14)
+    │   │   │   │   │   └─ Token(type=WHITESPACE, content=' ', line=5, col=19)
+    │   │   │   │   └─ PARGGROUP: 5:20
+    │   │   │   │       └─ ARGUMENT: 5:20
+    │   │   │   │           └─ Token(type=UNQUOTED_LITERAL, content='hello.cc', line=5, col=20)
+    │   │   │   └─ RPAREN: 5:28
+    │   │   │       └─ Token(type=RIGHT_PAREN, content=')', line=5, col=28)
+    │   │   └─ WHITESPACE: 5:29
+    │   │       └─ Token(type=NEWLINE, content='\n', line=5, col=29)
+    │   └─ STATEMENT: 6:0
+    │       ├─ FUNNAME: 6:0
+    │       │   └─ Token(type=WORD, content='endif', line=6, col=0)
+    │       ├─ LPAREN: 6:5
+    │       │   └─ Token(type=LEFT_PAREN, content='(', line=6, col=5)
+    │       ├─ ARGGROUP: 0:0
+    │       └─ RPAREN: 6:6
+    │           └─ Token(type=RIGHT_PAREN, content=')', line=6, col=6)
+    └─ WHITESPACE: 6:7
+        └─ Token(type=NEWLINE, content='\n', line=6, col=7)
