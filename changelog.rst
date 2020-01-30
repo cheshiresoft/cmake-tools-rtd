@@ -21,12 +21,14 @@ v0.6.8
 * Fix missing support for string integer npargs
 * Fix missing spec for derived classes of PositionalGroupNode
 * Add more helpful error message on failed configfile parse
+* Move documentation build to build time and push documentation artifacts
+  to an artifact repository
 
 * Closes `#162`: cmake-lint crashes when evaluating `math`
 * Closes `#163`: cmake-lint crashes when using `VERBATIM` in
   `add_custom_target`
 * Closes `#164`: Internal error FetchContent_MakeAvailable
-* Closes: 000bf9a, 9a3afa6, cf4570e
+* Closes: 000bf9a, 85a3985, 9a3afa6, cf4570e
 
 .. _#162: https://github.com/cheshirekow/cmake_format/issues/162
 .. _#163: https://github.com/cheshirekow/cmake_format/issues/163
